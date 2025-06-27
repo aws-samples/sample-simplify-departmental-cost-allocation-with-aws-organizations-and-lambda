@@ -1,15 +1,15 @@
-## My Project
+## Simplify Departmental Cost Allocation with AWS Organizations and Lambda
 
-TODO: Fill this README out!
+This sample code accompanies the AWS blog, "Simplify Departmental Cost Allocation with AWS Organizations and Lambda". It is used to configure the Lambda function described in the blog.
 
-Be sure to:
 
-* Change the title in this README
-* Edit your repository description on GitHub
+
 
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+
 
 ## License
 
