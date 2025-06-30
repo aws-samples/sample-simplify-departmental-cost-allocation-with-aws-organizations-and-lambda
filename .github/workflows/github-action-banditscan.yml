@@ -1,0 +1,26 @@
+name: github-action-banditscan
+on:
+  pull_request:
+    branches:
+    - main
+  workflow_dispatch:
+      inputs:
+        name:
+          description: "test"
+          default: "test"
+jobs:
+  check-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+      - name: Install bandit
+        run: |
+          pip install bandit
+      - name: bandit check
+        run: |
+          bandit -r sample-simplify-departmental-cost-allocation-with-aws-organizations-and-lambda.py --confidence-level high
